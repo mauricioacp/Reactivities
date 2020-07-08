@@ -9,7 +9,7 @@ using Activity = Domain.Activity;
 
 namespace API.Controllers {
     [Route ("api/[controller]")]
-    [ApiController]
+   // [ApiController]
     public class ActivitiesController : ControllerBase {
         private readonly IMediator _mediator;
         public ActivitiesController (IMediator mediator) {
@@ -31,7 +31,6 @@ namespace API.Controllers {
         [HttpPost]
         public async Task<ActionResult<Unit>>Create(Create.Command command)
         {
-
             return await _mediator.Send(command);
             
         }

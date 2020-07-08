@@ -1,11 +1,10 @@
 using System.Net;
 using System;
 using System.Threading.Tasks;
-using Application.Errors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System.Text.Json;
-
+using Application.Errors;
 namespace API.Middleware {
     public class ErrorHandlingMiddleware {
         private readonly RequestDelegate _next;

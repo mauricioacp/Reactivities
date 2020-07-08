@@ -37,6 +37,7 @@ namespace API
             });
 
             services.AddMediatR(typeof(List.Handler).Assembly);
+             services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddControllers()
             .AddFluentValidation(cfg=>
             {
@@ -56,14 +57,16 @@ namespace API
                 // app.UseDeveloperExceptionPage();
             }
             // app.UseHttpsRedirection();
-            app.UseRouting();
+            // app.UseRouting();
             app.UseCors("CorsPolicy");
+            
+            app.UseMvc();
 
-            app.UseAuthorization();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            // app.UseAuthorization();
+            // app.UseEndpoints(endpoints =>
+            // {
+            //     endpoints.MapControllers();
+            // });
 
 
         }

@@ -1,5 +1,9 @@
+.vscode
+*.db
 bin
 obj
-.vscode
 .DS_Store
-*.db
+wwwroot
+publish
+settings.json
+appsettings.json
