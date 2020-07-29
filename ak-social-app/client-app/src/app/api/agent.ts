@@ -22,7 +22,7 @@ axios.interceptors.response.use(undefined, (error) => {
   if (status === 500) {
     toast.error("Server Error - check terminal for more info!");
   }
-  // throw error;
+  throw error;
 });
 
 axios.interceptors.response.use(undefined, (error) => {

@@ -9,7 +9,7 @@ using Activity = Domain.Activity;
 
 namespace API.Controllers {
     [Route ("api/[controller]")]
-   // [ApiController]
+    [ApiController]
     public class ActivitiesController : ControllerBase {
         private readonly IMediator _mediator;
         public ActivitiesController (IMediator mediator) {

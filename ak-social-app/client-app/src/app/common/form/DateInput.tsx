@@ -20,6 +20,8 @@ const DateInput: React.FC<IProps> = ({
       <DateTimePicker
         placeholder={placeholder}
         onChange={input.onChange}
+        onBlur={input.onBlur}
+        onKeyDown={(e)=>e.preventDefault()}
         value={input.value || null}
         date={date}
         time={time}

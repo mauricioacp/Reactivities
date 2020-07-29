@@ -28,7 +28,8 @@
     "react-scripts": "3.4.1",
     "react-toastify": "^6.0.8",
     "react-widgets": "^4.5.0",
-    "react-widgets-date-fns": "^4.1.0",
+    "react-widgets-date-fns": "^4.0.26",
+    "revalidate": "^1.2.0",
     "semantic-ui-react": "^0.88.1",
     "typescript": "^3.7.5",
     "uuid": "^8.1.0"
