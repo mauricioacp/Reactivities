@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.ak-social-app.iml
+# Datasource local storage ignored files
+/../../../../../../../../:\Programming\VisualCode_Projects\Reactivities\ak-social-app\.idea\.idea.ak-social-app\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
