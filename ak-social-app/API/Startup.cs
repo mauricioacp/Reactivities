@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.IdentityModel.Tokens;
+using AutoMapper;
 
 namespace API
 {
@@ -35,8 +36,10 @@ namespace API
         {
             services.AddDbContext<DataContext>(opt =>
             {
+                opt.UseLazyLoadingProxies();
                 opt.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
             });
+
             services.AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy",
@@ -44,17 +47,28 @@ namespace API
             });
 
             services.AddMediatR(typeof(List.Handler).Assembly);
-            // services.AddMvc(option => option.EnableEndpointRouting = false);
+
+            services.AddAutoMapper(typeof(List.Handler).Assembly);
+
             services.AddControllers(opt =>
                 {
                     var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
                     opt.Filters.Add(new AuthorizeFilter(policy));
                 })
                 .AddFluentValidation(cfg => { cfg.RegisterValidatorsFromAssemblyContaining<Create>(); });
+
             var builder = services.AddIdentityCore<AppUser>();
+
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
             identityBuilder.AddEntityFrameworkStores<DataContext>();
             identityBuilder.AddSignInManager<SignInManager<AppUser>>();
+
+            services.AddAuthorization(opt => opt.AddPolicy("IsActivityHost", policy =>
+            {
+                policy.Requirements.Add(new isHostRequirement());
+            }));
+
+            services.AddTransient<IAuthorizationHandler, IsHostRequirementHandler>();
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["TokenKey"]));
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -68,6 +82,7 @@ namespace API
                         ValidateIssuer = false
                     };
                 });
+
             services.AddScoped<IJwtGenerator, JwtGenerator>();
             services.AddScoped<IUserAccessor, UserAccessor>();
         }

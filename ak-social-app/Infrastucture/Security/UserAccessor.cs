@@ -17,10 +17,10 @@ namespace Infrastucture.Security
         public string GetCurrentUsername()
         {
             //we may not have a user so --> ?
-            var userName = _httpContextAccessor.HttpContext
+            var Username = _httpContextAccessor.HttpContext
             .User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
 
-            return userName;
+            return Username;
         }
     }
 }

@@ -53,7 +53,7 @@ const LoginForm = () => {
                     {submitError && !dirtySinceLastSubmit && (
                         <ErrorMessage
                             error={submitError}
-                            text='Invalid username or password'
+                            text='Invalid Username or password'
                         />
                     )}
                     <Button
