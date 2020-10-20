@@ -1,27 +1,29 @@
+using System;
 using System.Text;
 using System.Threading.Tasks;
+using API.Middleware;
+using API.SignalR;
+using Application.Activities;
+using Application.Interfaces;
+using Application.Profiles;
+using AutoMapper;
+using Domain;
+using FluentValidation.AspNetCore;
+using Infrastucture.Photos;
+using Infrastucture.Security;
+using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Persistence;
-using MediatR;
-using Application.Activities;
-using FluentValidation.AspNetCore;
-using API.Middleware;
-using API.SignalR;
-using Application.Interfaces;
-using Domain;
-using Microsoft.AspNetCore.Identity;
-using Infrastucture.Security;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.IdentityModel.Tokens;
-using AutoMapper;
-using Infrastucture.Photos;
+using Persistence;
 
 namespace API
 {
@@ -105,6 +107,7 @@ namespace API
             services.AddScoped<IJwtGenerator, JwtGenerator>();
             services.AddScoped<IUserAccessor, UserAccessor>();
             services.AddScoped<IPhotoAccessor, PhotoAccessor>();
+            services.AddScoped<IProfileReader, ProfileReader>();
             services.Configure<CloudinarySettings>(Configuration.GetSection("Cloudinary"));
         }
 
