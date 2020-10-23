@@ -3,12 +3,13 @@ import { Tab } from 'semantic-ui-react';
 import ProfileDescription from './ProfileDescription';
 import ProfilePhotos from './ProfilePhotos';
 import ProfileFollowings from './ProfileFollowings';
+import ProfileActivities from './PorofileActivities';
 
 const panes = [
   { menuItem: 'About', render: () => <ProfileDescription /> },
   { menuItem: 'Photos', render: () => <ProfilePhotos /> },
   {
-    menuItem: 'Activities', render: () => <Tab.Pane>Activities content</Tab.Pane>,
+    menuItem: 'Activities', render: () => <ProfileActivities />,
   },
   {
     menuItem: 'Followers', render: () => <ProfileFollowings />,
@@ -18,17 +19,17 @@ const panes = [
   },
 ];
 
-interface IProps{
-  setActiveTab:(activeIndex:any)=>void;
+interface IProps {
+  setActiveTab: (activeIndex: any) => void;
 }
 
-const ProfileContent:React.FC<IProps> = ({setActiveTab}) => {
+const ProfileContent: React.FC<IProps> = ({ setActiveTab }) => {
   return (
     <Tab
       menu={{ fluid: true, vertical: true }}
       menuPosition='right'
       panes={panes}
-      onTabChange={(e,data)=>setActiveTab(data.activeIndex)}
+      onTabChange={(e, data) => setActiveTab(data.activeIndex)}
     />
   );
 };
