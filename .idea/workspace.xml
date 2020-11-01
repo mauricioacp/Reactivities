@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="415e47af-474e-4029-9c0a-7dbcd6f6e349" name="Default Changelist" comment="end of section 21">
+      <change afterPath="$PROJECT_DIR$/.idea/Reactivities.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ak-social-app/API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/API/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/app/api/agent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/app/api/agent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/app/common/util/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/app/common/util/util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/app/layout/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/app/layout/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/app/stores/activityStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/app/stores/activityStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/features/activities/dashboard/ActivityDashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/features/activities/dashboard/ActivityDashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/features/home/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/features/home/HomePage.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JupyterTrust" id="b3c1498b-070b-411b-a7d3-a7c90f5c51ac" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ixkmpgFE4CltE7wixfM6UTfagB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Programming\VisualCode_Projects\Reactivities\ak-social-app\client-app" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="C:\Programming\VisualCode_Projects\Reactivities\ak-social-app\client-app\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="415e47af-474e-4029-9c0a-7dbcd6f6e349" name="Default Changelist" comment="" />
+      <created>1602856791447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602856791447</updated>
+      <workItem from="1602856792520" duration="1191000" />
+      <workItem from="1602952656661" duration="724000" />
+      <workItem from="1603025722614" duration="3566000" />
+      <workItem from="1603029324127" duration="1350000" />
+      <workItem from="1603164132119" duration="3801000" />
+      <workItem from="1603219479089" duration="602000" />
+      <workItem from="1603258549870" duration="1385000" />
+      <workItem from="1603384239195" duration="3002000" />
+      <workItem from="1603470304944" duration="6047000" />
+      <workItem from="1604260992732" duration="626000" />
+    </task>
+    <task id="LOCAL-00001" summary="end of section 21">
+      <created>1603472108282</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603472108282</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="end of section 21" />
+    <option name="LAST_COMMIT_MESSAGE" value="end of section 21" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="763" y="379" key="#ESLint" timestamp="1603474132647">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="763" y="379" key="#ESLint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603474132647" />
+    <state x="578" y="297" key="#Notifications" timestamp="1603171308322">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="578" y="297" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603171308322" />
+    <state x="702" y="346" key="#Scopes" timestamp="1603028207709">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="346" key="#Scopes/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603028207709" />
+    <state x="527" y="300" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603028087022">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="527" y="300" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603028087022" />
+    <state x="678" y="216" key="FileChooserDialogImpl" timestamp="1603029056901">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="678" y="216" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603029056901" />
+    <state x="430" y="193" key="IDE.errors.dialog" timestamp="1604261342300">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="430" y="193" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604261342300" />
+    <state x="374" y="78" key="SettingsEditor" timestamp="1603029748548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="374" y="78" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603029748548" />
+    <state x="452" y="189" key="Vcs.Push.Dialog.v2" timestamp="1603472117450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603472117450" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1604261202818">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604261202818" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604261460389">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604261460389" />
+  </component>
+</project>
