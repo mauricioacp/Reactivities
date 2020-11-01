@@ -83,12 +83,11 @@ export default class ActivityStore {
         .start()
         .then(() => console.log(this.hubConnection!.state))
         .then(() => {
-          console.log('Attempting to join group');
-          this.hubConnection?.invoke('AddToGroup', activityId);
+          if (this.hubConnection!.state === 'Connected') {
+            this.hubConnection!.invoke('AddToGroup', activityId)
+          }
         })
-        .catch((error) =>
-          console.log('Error establishing connection: ', error),
-        );
+        .catch(error => console.log('Error establishing connection: ', error));
     }
 
     this.hubConnection.on('ReceiveComment', (comment) => {
@@ -96,6 +95,8 @@ export default class ActivityStore {
         this.activity!.comments.push(comment);
       });
     });
+
+
 
     // this.hubConnection.on('Send', (message) => {
     //   toast.info(message);
