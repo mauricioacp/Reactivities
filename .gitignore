@@ -14,3 +14,6 @@ appsettings.json
 ak-social-app/.idea/.idea.ak-social-app/.idea/codeStyles/
 ak-social-app/.idea/.idea.ak-social-app/.idea/dataSources.xml
 ak-social-app/.idea/.idea.ak-social-app/.idea/dataSources/
+!/.idea/
+!/.idea/compiler.xml
+!/.idea/dbnavigator.xml
