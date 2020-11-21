@@ -22,25 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="415e47af-474e-4029-9c0a-7dbcd6f6e349" name="Default Changelist" comment="end of section 21">
-      <change afterPath="$PROJECT_DIR$/.idea/Reactivities.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ak-social-app/API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/API/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/app/api/agent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/app/api/agent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/app/common/util/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/app/common/util/util.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/app/layout/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/app/layout/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/app/stores/activityStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/app/stores/activityStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/features/activities/dashboard/ActivityDashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/features/activities/dashboard/ActivityDashboard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ak-social-app/client-app/src/features/home/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/client-app/src/features/home/HomePage.tsx" afterDir="false" />
+    <list default="true" id="415e47af-474e-4029-9c0a-7dbcd6f6e349" name="Default Changelist" comment="hub connection bug fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ak-social-app/.idea/.idea.ak-social-app/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ak-social-app/.idea/.idea.ak-social-app/.idea/dbnavigator.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +65,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/SparkScala" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -107,6 +91,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="client-app" type="NodeJSConfigurationType" node-parameters="npm start" path-to-js-file="$PROJECT_DIR$/ak-social-app/client-app/package.json" working-dir="$PROJECT_DIR$/ak-social-app/client-app/src">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -125,7 +112,11 @@
       <workItem from="1603258549870" duration="1385000" />
       <workItem from="1603384239195" duration="3002000" />
       <workItem from="1603470304944" duration="6047000" />
-      <workItem from="1604260992732" duration="626000" />
+      <workItem from="1604260992732" duration="2104000" />
+      <workItem from="1604263129155" duration="706000" />
+      <workItem from="1604263855861" duration="1302000" />
+      <workItem from="1604701298493" duration="22000" />
+      <workItem from="1604701335864" duration="663000" />
     </task>
     <task id="LOCAL-00001" summary="end of section 21">
       <created>1603472108282</created>
@@ -134,7 +125,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603472108282</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="check point">
+      <created>1604261935709</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604261935709</updated>
+    </task>
+    <task id="LOCAL-00003" summary="hub connection bug fixed">
+      <created>1604265160285</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604265160285</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +159,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="end of section 21" />
-    <option name="LAST_COMMIT_MESSAGE" value="end of section 21" />
+    <MESSAGE value="check point" />
+    <MESSAGE value="hub connection bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="hub connection bug fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="763" y="379" key="#ESLint" timestamp="1603474132647">
@@ -169,14 +176,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="346" key="#Scopes/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603028207709" />
+    <state x="414" y="175" width="1123" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604264093012">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" width="1123" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604264093012" />
     <state x="527" y="300" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603028087022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="527" y="300" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603028087022" />
-    <state x="678" y="216" key="FileChooserDialogImpl" timestamp="1603029056901">
+    <state x="678" y="216" key="FileChooserDialogImpl" timestamp="1604702713511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="678" y="216" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603029056901" />
+    <state x="678" y="216" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604702713511" />
+    <state width="1879" height="422" key="GridCell.Tab.0.bottom" timestamp="1604265171769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604265171769" />
+    <state width="1879" height="422" key="GridCell.Tab.0.center" timestamp="1604265171769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="422" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604265171769" />
+    <state width="1879" height="422" key="GridCell.Tab.0.left" timestamp="1604265171769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="422" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604265171769" />
+    <state width="1879" height="422" key="GridCell.Tab.0.right" timestamp="1604265171769">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="422" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604265171769" />
     <state x="430" y="193" key="IDE.errors.dialog" timestamp="1604261342300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -185,17 +212,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="374" y="78" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603029748548" />
-    <state x="452" y="189" key="Vcs.Push.Dialog.v2" timestamp="1603472117450">
+    <state x="452" y="189" key="Vcs.Push.Dialog.v2" timestamp="1604265161514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603472117450" />
+    <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604265161514" />
+    <state x="520" y="95" key="new project wizard" timestamp="1604702697851">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="520" y="95" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604702697851" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1604261202818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604261202818" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604261460389">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604265013951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604261460389" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604265013951" />
   </component>
 </project>
