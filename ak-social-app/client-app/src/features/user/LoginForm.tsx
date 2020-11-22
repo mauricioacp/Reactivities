@@ -34,7 +34,7 @@ const LoginForm = () => {
                 invalid,
                 pristine,
             }) => (
-                <Form onSubmit={handleSubmit} error>
+                <Form onSubmit={handleSubmit} error autoComplete="off">
                     <Header
                         as='h2'
                         content='Login to Reactivities'
