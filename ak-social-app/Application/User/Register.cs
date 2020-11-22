@@ -67,6 +67,8 @@ namespace Application.User
                     Email = request.Email,
                     UserName = request.Username
                 };
+                var refreshToken = _jwtGenerator.GenerateRefreshToken();
+                user.RefreshTokens.Add(refreshToken);
 
                 var result = await _userManager.CreateAsync(user, request.Password);
 
@@ -74,25 +76,11 @@ namespace Application.User
 
                 if (result.Succeeded)
                 {
-                    return new User
-                    {
-                        DisplayName = user.DisplayName,
-                        Token = _jwtGenerator.CreateToken(user),
-                        Username = request.Username,
-                        Image = user.Photos.FirstOrDefault(x=>x.IsMain)?.Url
-                    };
+                    return new User(user, _jwtGenerator, refreshToken.Token);
                 }
 
                 throw new Exception("Problem creating User");
-
-                // var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                // token = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
-
-                // var verifyUrl = $"{request.Origin}/user/verifyEmail?token={token}&email={request.Email}";
-
-                // var message = $"<p>Please click the below link to verify your email address:</p><p><a href='{verifyUrl}'>{verifyUrl}></a></p>";
-
-                // await _emailSender.SendEmailAsync(request.Email, "Please verify email address", message);
+                
             }
         }
     }
