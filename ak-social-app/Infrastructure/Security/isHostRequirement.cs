@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Persistence;
 
-namespace Infrastucture.Security
+namespace Infrastructure.Security
 {
     public class isHostRequirement : IAuthorizationRequirement
     {

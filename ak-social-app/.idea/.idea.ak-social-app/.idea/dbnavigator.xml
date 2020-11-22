@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -23,11 +23,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="5f0a3a55-6ccd-462f-b972-8bba37d0c19d">
-        <schema name="main" object-types="column, index, constraint, table, view, dataset trigger" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="5f0a3a55-6ccd-462f-b972-8bba37d0c19d">
@@ -40,8 +36,23 @@
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="5f0a3a55-6ccd-462f-b972-8bba37d0c19d" />
   </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="5f0a3a55-6ccd-462f-b972-8bba37d0c19d" dataset="main.AspNetRoles" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="5f0a3a55-6ccd-462f-b972-8bba37d0c19d" dataset="main.AspNetUsers" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="5f0a3a55-6ccd-462f-b972-8bba37d0c19d" dataset="main.AspNetUserClaims" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="5f0a3a55-6ccd-462f-b972-8bba37d0c19d" dataset="main.Comments" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="5f0a3a55-6ccd-462f-b972-8bba37d0c19d" dataset="main.AspNetRoleClaims" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="5f0a3a55-6ccd-462f-b972-8bba37d0c19d" dataset="main.Activities" active-filter-id="">
+      <filter id="a38acfe9-dad9-438f-9d30-dff35ee1d86e" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="Id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+  </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
