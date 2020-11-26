@@ -4,10 +4,9 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc.Filters;
 using Persistence;
 
-namespace Infrastructure.Security
+namespace Infrastucture.Security
 {
     public class isHostRequirement : IAuthorizationRequirement
     {

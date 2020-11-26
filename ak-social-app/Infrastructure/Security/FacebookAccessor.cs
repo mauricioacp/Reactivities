@@ -1,4 +1,3 @@
-using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
@@ -7,7 +6,7 @@ using Application.User;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
-namespace Infrastructure.Security
+namespace Infrastucture.Security
 {
     public class FacebookAccessor:IFacebookAccessor
     {

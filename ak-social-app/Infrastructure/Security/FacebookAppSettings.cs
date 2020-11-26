@@ -1,4 +1,4 @@
-namespace Infrastructure.Security
+namespace Infrastucture.Security
 {
     public class FacebookAppSettings
     {

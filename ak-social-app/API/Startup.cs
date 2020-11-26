@@ -9,8 +9,8 @@ using Application.Profiles;
 using AutoMapper;
 using Domain;
 using FluentValidation.AspNetCore;
-using Infrastructure.Photos;
-using Infrastructure.Security;
+using Infrastucture.Email;
+using Infrastucture.Photos;
 using Infrastucture.Security;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -70,11 +70,15 @@ namespace API
                 })
                 .AddFluentValidation(cfg => { cfg.RegisterValidatorsFromAssemblyContaining<Create>(); });
 
-            var builder = services.AddIdentityCore<AppUser>();
+            var builder = services.AddIdentityCore<AppUser>(options =>
+            {
+                options.SignIn.RequireConfirmedEmail = true;
+            });
 
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
             identityBuilder.AddEntityFrameworkStores<DataContext>();
             identityBuilder.AddSignInManager<SignInManager<AppUser>>();
+            identityBuilder.AddDefaultTokenProviders();
 
             services.AddAuthorization(opt =>
                 opt.AddPolicy("IsActivityHost", policy => { policy.Requirements.Add(new isHostRequirement()); }));
@@ -116,8 +120,10 @@ namespace API
             services.AddScoped<IPhotoAccessor, PhotoAccessor>();
             services.AddScoped<IProfileReader, ProfileReader>();
             services.AddScoped<IFacebookAccessor, FacebookAccessor>();
+            services.AddScoped<IEmailSender, EmailSender>();
             services.Configure<CloudinarySettings>(Configuration.GetSection("Cloudinary"));
             services.Configure<FacebookAppSettings>(Configuration.GetSection("Authentication:Facebook"));
+            services.Configure<SendGridSettings>(Configuration.GetSection("SendGrid"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Infrastructure
+﻿namespace Infrastucture
 {
     public class Class1
     {

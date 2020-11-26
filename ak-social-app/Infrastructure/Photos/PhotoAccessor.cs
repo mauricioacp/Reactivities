@@ -6,7 +6,7 @@ using CloudinaryDotNet.Actions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 
-namespace Infrastructure.Photos
+namespace Infrastucture.Photos
 {
     public class PhotoAccessor : IPhotoAccessor
     {
