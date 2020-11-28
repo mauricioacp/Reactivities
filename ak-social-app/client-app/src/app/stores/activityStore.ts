@@ -1,4 +1,11 @@
-import { observable, action, computed, runInAction, reaction, toJS } from 'mobx';
+import {
+  observable,
+  action,
+  computed,
+  runInAction,
+  reaction,
+  toJS,
+} from 'mobx';
 import { SyntheticEvent } from 'react';
 import { IActivity } from '../models/activity';
 import agent from '../api/agent';
@@ -11,7 +18,6 @@ import {
   HubConnectionBuilder,
   LogLevel,
 } from '@microsoft/signalr';
-
 
 const LIMIT = 2;
 
@@ -72,7 +78,7 @@ export default class ActivityStore {
 
   @action createHubConnection = (activityId: string) => {
     this.hubConnection = new HubConnectionBuilder()
-      .withUrl('http://localhost:5000/chat', {
+      .withUrl(process.env.REACT_APP_API_CHAT_URL!, {
         accessTokenFactory: () => this.rootStore.commonStore.token!,
       })
       .configureLogging(LogLevel.Information)
@@ -84,10 +90,12 @@ export default class ActivityStore {
         .then(() => console.log(this.hubConnection!.state))
         .then(() => {
           if (this.hubConnection!.state === 'Connected') {
-            this.hubConnection!.invoke('AddToGroup', activityId)
+            this.hubConnection!.invoke('AddToGroup', activityId);
           }
         })
-        .catch(error => console.log('Error establishing connection: ', error));
+        .catch((error) =>
+          console.log('Error establishing connection: ', error),
+        );
     }
 
     this.hubConnection.on('ReceiveComment', (comment) => {
@@ -95,8 +103,6 @@ export default class ActivityStore {
         this.activity!.comments.push(comment);
       });
     });
-
-
 
     // this.hubConnection.on('Send', (message) => {
     //   toast.info(message);

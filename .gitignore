@@ -5,10 +5,8 @@ obj
 .DS_Store
 wwwroot
 publish
-settings.json
-appsettings.json
-!/.vscode/
-/ak-social-app/ak-social-app.sln.DotSettings.user
-/.vscode/
-/ak-social-app/.idea/
+*settings.json
+*appsettings.json
 .idea
+wwwroot
+publish
